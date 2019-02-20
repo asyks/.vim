@@ -1,6 +1,8 @@
+DIR := $(shell pwd)
+
 .PHONY: install
 install: update
-	ln -snf $(shell pwd)/.vimrc $(HOME)/.vimrc
+	ln -snf $(DIR)/.vimrc $(HOME)/.vimrc
 	sudo ln -snf "$(HOME)/.vim" /root/.vim
 	sudo ln -snf "$(HOME)/.vimrc" /root/.vimrc
 
