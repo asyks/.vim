@@ -4,9 +4,6 @@ install: update
 	sudo ln -snf "$(HOME)/.vim" /root/.vim
 	sudo ln -snf "$(HOME)/.vimrc" /root/.vimrc
 
-.PHONY: add-submodules
-add-submodules:
-
 .PHONY: update
 update:
 	git submodule update --init --recursive
