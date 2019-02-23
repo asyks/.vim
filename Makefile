@@ -1,11 +1,10 @@
 DIR := $(shell pwd)
 
 .PHONY: install
-install: update
+install:
 	ln -snf $(DIR)/.vimrc $(HOME)/.vimrc
 	sudo ln -snf "$(HOME)/.vim" /root/.vim
 	sudo ln -snf "$(HOME)/.vimrc" /root/.vimrc
-	git submodule init
 
 .PHONY: update
 update:
