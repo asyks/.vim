@@ -12,7 +12,6 @@ set t_Co=256
 
 " visual formatting
 set number
-set relativenumber
 set nowrap
 colorscheme asyks
 hi Search term=standout ctermfg=0 ctermbg=11
