@@ -29,6 +29,10 @@ au FileType json setl sw=2 sts=2 et
 au FileType python setl sw=4 sts=4 et
 au FileType yaml setl sw=2 sts=2 et
 
+" display full-path filename in status
+set laststatus=2
+set statusline+=%F
+
 " search highlighting settings
 set hlsearch
 
